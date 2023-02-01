@@ -1,0 +1,74 @@
+//TRANG WEB VE DU AN
+main {
+  width: 100%;
+  padding: 48px;
+}
+// .row {
+//   margin: 0 4px;
+// }
+// PHAN CHUNG CHO CAC TABLE
+.project-2-col {
+  box-shadow: 0 0 20px $green-100;
+  padding: 24px;
+  table {
+    // caption {
+    //   border-bottom: 1px solid $gray-400;
+    // }
+    //phan caption chu vang moi tren moi table
+    caption {
+      color: $yellow;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    tr {
+      td {
+        vertical-align: middle;
+        .trhead {
+          text-align: center;
+          padding: 10px 20px 20px 0;
+          //phan icon ben trai
+          i {
+            color: $theme-color;
+            font-size: 30px;
+            padding: 10px;
+          }
+        }
+        .trdata p:first-child {
+          font-size: 18px;
+        }
+      }
+      //phan highligh dong dau tien ben phai
+      td p:first-child {
+        font-weight: bold;
+        color: $theme-color;
+      }
+    }
+  }
+}
+//TBALE SCOPE
+#project-scope {
+  tr {
+    font-weight: normal;
+    border-bottom: 0 solid white;
+    th .trdata {
+      font-weight: normal;
+      p:first-child {
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $theme-color;
+        i {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+//TABLE PRIMARY
+#project-primary {
+  td p:first-child {
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+  }
+}

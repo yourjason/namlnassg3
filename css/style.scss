@@ -1,0 +1,553 @@
+@import "variables";
+
+//FORMAT CO BA BAN DAU
+
+$theme-color: $green-800;
+body {
+  font-family: NotoSans-Regular;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: calc(1rem + 0.6vw);
+  color: $theme-color;
+  font-weight: 600;
+}
+h3 {
+  color: $theme-color;
+  font-size: 18px;
+  margin-left: 20px;
+}
+i {
+  color: $theme-color;
+}
+.hidden {
+  display: none;
+}
+// PHAN NAVBAR
+
+.navbar {
+  position: relative;
+  --bs-navbar-color: green;
+  --bs-navbar-toggler-focus-width: 2px;
+  background-color: $green-50;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  .navbar-brand {
+    font-family: Monoton-Regular;
+    color: $theme-color;
+    font-weight: 500;
+    letter-spacing: 1px;
+    span {
+      font-weight: 600;
+    }
+  }
+  // nav-item - dropdown list - collapse
+
+  .navbar-collapse {
+    margin-left: 20px;
+  }
+  .nav-item {
+    .nav-link {
+      justify-items: center;
+      color: $theme-color;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  //dropdown-list
+  .dropdown-menu {
+    --bs-dropdown-link-hover-bg: #e8f5e9;
+    --bs-dropdown-link-active-bg: #e8f5e9;
+    .dropdown-item {
+      color: $gray-800;
+      font-size: 12px;
+    }
+  }
+  //hambuger-menu
+  .navbar-toggler {
+    border: none;
+    margin-right: 12px;
+  }
+
+  //search bar
+  .form-control {
+    font-size: 12px;
+    border: 1px solid $green-400;
+  }
+  .form-control:focus {
+    background-color: #fff;
+    border-color: $green-200;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem $green-200;
+  }
+  input::placeholder {
+    color: $green-400;
+  }
+}
+// PHAN BANNER CHIEM 80% CHIEU CAO TRANG VA NAM TRUNG TAM
+.carousel-inner {
+  .banner {
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+  }
+}
+// indicators - tao thanh cac hinnh tron chen anh backgroud
+.carousel-indicators {
+  [data-bs-target] {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid transparent;
+  }
+  .active {
+    border-color: $green-400;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+  }
+  position: relative;
+  margin: 0;
+}
+//2 phim control trai- phai dieu khien slide
+
+.carousel-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  .control-btn {
+    height: 24px;
+    width: 24px;
+    top: 50%;
+    background-color: $green-600;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.3s ease;
+  }
+  .carousel-control-prev {
+    left: -30px;
+  }
+  .carousel-control-next {
+    right: -30px;
+  }
+  img {
+    width: 16px;
+    color: transparent;
+  }
+}
+
+// Captions
+.carousel-inner {
+  .carousel-item {
+    .carousel-caption {
+      color: white;
+      text-align: start;
+      top: 50%;
+      left: 80px;
+      bottom: 200px;
+      p {
+        color: $green-50;
+        font-size: 16px;
+      }
+      button {
+        padding: 5px 30px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+//phan subcription box
+
+#subcription-box {
+  .row {
+    margin: 0;
+  }
+  //phan the chinh
+  .card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 48vh;
+    border-radius: 8px;
+    top: -360px;
+    z-index: 10;
+    //phan text -script
+    .text-script {
+      width: 100%;
+      color: white;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      span {
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        bottom: 72px;
+        transform: translateX(-50%);
+      }
+    }
+    // nut close
+    .btn-close {
+      z-index: 11;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background-color: $gray-400;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+// phan layout nen
+.over-layout {
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 8;
+  top: 0;
+  position: fixed;
+}
+//PHAN Description
+// muc tieu nghe nghiep
+#target {
+  background-color: $green-50;
+  margin: 0;
+  h2 {
+    text-align: center;
+  }
+  p {
+    padding: 0 40px 0 60px;
+    text-align: start;
+    strong {
+      color: $theme-color;
+    }
+  }
+}
+// phan thong tin ca nhan
+#personal-info {
+  margin: 0 0 40px 60px;
+  .btn-view {
+    background-color: $theme-color;
+    color: white;
+  }
+
+  table {
+    height: 80%;
+
+    tr {
+      td {
+        padding-left: 32px;
+        i {
+          padding: 10px 2px;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
+
+///FORM SUBMIT EMAIL - phan nay format tuong tu nhu the subcription o trn
+#input-email-box {
+  .row {
+    margin: 0;
+  }
+  //phan the chinh
+  .card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 48vh;
+    border-radius: 8px;
+    z-index: 10;
+    top: -48px;
+    right: 24px;
+    //phan text -script
+    .text-script {
+      width: 100%;
+      color: white;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+    }
+    // nut close
+    .btn-close-email {
+      z-index: 11;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background-color: $gray-400;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+//------PHAN KINH NGHIEM - KY NANG-----------
+#job-info {
+  background-size: cover;
+  padding-bottom: 40px;
+  .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin: 0 12px;
+}
+.job-detail {
+  //phan tieu de card
+  .job-detail-title {
+    padding-bottom: 10px;
+    h2 {
+      margin: 0;
+    }
+    // i {
+    //   font-size: 16px;
+    //   padding: 10px;
+    //   border-radius: 50%;
+    //   color: $green-600;
+    //   background-color: $yellow-100;
+    // }
+  }
+  //phan noi dung card
+  .job-detail-content {
+    color: $gray-800;
+    ul li {
+      p i {
+        padding-right: 8px;
+        line-height: 1;
+      }
+      list-style: none;
+      p:first-child {
+        font-weight: bold;
+        margin: 10px 0 10px -25px;
+        color: $green-600;
+      }
+      // phan nhan manh
+      em {
+        background-color: $yellow;
+        padding: 0 15px;
+        border-radius: 15px;
+        color: $theme-color;
+        font-style: normal;
+      }
+    }
+  }
+
+  // phan table trong phan so thich, ky nang va ngon ngu
+  table {
+    margin: 10px auto 10px;
+    width: 90%;
+    tr {
+      line-height: 1.8;
+      th {
+        font-weight: bold;
+      }
+      vertical-align: top;
+      td {
+        padding-left: 8px;
+      }
+    }
+  }
+  //phan so thich
+  .detail-hobbies {
+    tr {
+      line-height: 3;
+    }
+    padding-bottom: 20px;
+    i {
+      font-size: 20px;
+      color: $green-400;
+    }
+    th em i {
+      color: $theme-color;
+      background-color: $yellow;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+  //phan gach duoi danh gia muc do thnha thao ki nang
+  table tr td span {
+    line-height: 1;
+    background-color: $yellow;
+    display: inline-block;
+    width: 20%;
+    height: 3px;
+    margin-right: 5px;
+  }
+  table tr td .grey-color {
+    background-color: #868e96;
+  }
+}
+
+// phan buttion view more
+.job-detail {
+  position: relative;
+  cursor: pointer;
+  .bttn-down {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    width: 60%;
+    color: $theme-color;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    i {
+      padding-right: 20px;
+    }
+  }
+}
+.job-detail:hover .bttn-down {
+  opacity: 1;
+  pointer-events: auto;
+}
+///PHAN CHUNG CHI
+
+#certificates {
+  background-color: $green-50;
+  .certificates-menu {
+    padding: 0 0 0 40px;
+  }
+  h2 {
+    margin-left: 40px;
+    padding-top: 20px;
+  }
+  .certificate {
+    padding: 28px 40px;
+    .meme {
+      width: 32%;
+      margin: 20px 0 0 160px;
+    }
+    .cert-detail ul li {
+      list-style: none;
+    }
+    .cert-detail ul li::before {
+      content: "\2022";
+      color: $theme-color;
+      display: inline-block;
+      width: 1em;
+      font-weight: bold;
+      margin-left: -1em;
+    }
+  }
+  // hinh anh bang cap chung chi
+  .cert-img {
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: auto;
+    border: 6px double #adb5bd;
+    box-shadow: 0 0 4px $gray-600;
+  }
+}
+///PHAN DU AN
+
+#project {
+  h2 {
+    margin-left: 40px;
+    padding-top: 20px;
+  }
+  .projects-menu {
+    //phan cac box cong
+    .project-details {
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0 0 20px $gray-200;
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+      //tieu de du an
+      h3 {
+        margin: 10px 0 0 0;
+        padding: 10px;
+        background-color: $green-50;
+        border-radius: 10px;
+      }
+      .project-year {
+        padding: 10px 10px;
+        border-bottom: 1px solid $green-600;
+        font-weight: bold;
+        span i {
+          font-size: 18px;
+          padding: 10px;
+        }
+        //cac nam lam du an
+        .time-curent {
+          background-color: $yellow;
+          color: $theme-color;
+          padding: 2px 10px;
+          border-radius: 10px;
+        }
+        .proj-des {
+          display: inline;
+        }
+      }
+      //phan table chua thong ti du an
+      .project-table {
+        height: 32vh;
+        margin: 10px 0;
+        tr {
+          vertical-align: top;
+          text-align: left;
+
+          th {
+            width: 30%;
+            padding-left: 10px;
+          }
+          a {
+            color: $theme-color;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          a:hover {
+            color: $green-400;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* TAO LAYOUT CHO PHAn FOOTER */
+#footer {
+  background-color: $theme-color;
+  padding: 12px;
+  text-align: center;
+  ul li {
+    padding: 10px;
+    a {
+      color: white;
+    }
+    list-style: none;
+    font-weight: bold;
+    i {
+      color: white;
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+}
+
+/* format cho cac link footer */
+#footer a:link {
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: $green-600;
+}
+
+@import "project-style";
+@import "mobile";

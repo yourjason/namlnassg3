@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nam Luu Nhat Assgn 03</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span> Nam Luu </span> nhat</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#experience"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Experience
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#experience">Experience</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#education">Education</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#hobbies">Other skills</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PHAN CAROUSEL CHO BANNER CUA PAGE -->
+    <div id="leader_banner" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="banner banner-1"
+            style="background-image: url('images/banner-1.jpg')"
+          ></div>
+          <div class="carousel-caption caption-1">
+            <!-- hien thi text cho size md tro len -->
+            <h1>Become a <span class="text-warning"> Web Developer </span></h1>
+            <p class="d-none d-md-block">
+              Focusing on learning and practicing<br />
+              the fundamentals of the latest and greatest technologies to
+              prepare for first-job dev role
+            </p>
+            <button type="button" class="btn btn-warning open-sub-btn">
+              Subcrible
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="banner banner-2"
+            style="background-image: url('images/banner-2.jpg')"
+          ></div>
+          <div class="carousel-caption caption-2">
+            <!-- hien thi text cho size md tro len -->
+            <h1>Become a <span class="text-warning"> Web Developer </span></h1>
+            <p class="d-none d-md-block">
+              Focusing on learning and practicing the fundamentals of the latest
+              and greatest technologies to prepare for first-job dev role
+            </p>
+            <button type="button" class="btn btn-warning open-sub-btn">
+              Subcrible
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="banner banner-3"
+            style="background-image: url('images/banner-3.jpg')"
+          ></div>
+          <div class="carousel-caption caption-3">
+            <!-- hien thi text cho size md tro len -->
+            <h1>Become a <span class="text-warning"> Web Developer </span></h1>
+            <p class="d-none d-md-block">
+              Focusing on learning and practicing the fundamentals of the latest
+              and greatest technologies to prepare for first-job dev role
+            </p>
+            <button type="button" class="btn btn-warning open-sub-btn">
+              Subcrible
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <!-- CAC INDICATOR CUA BANNER  -->
+        <div class="carousel-indicators">
+          <button
+            style="background-image: url(images/banner-1.jpg)"
+            type="button"
+            data-bs-target="#leader_banner"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            style="background-image: url(images/banner-2.jpg)"
+            type="button"
+            data-bs-target="#leader_banner"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            style="background-image: url(images/banner-3.jpg)"
+            type="button"
+            data-bs-target="#leader_banner"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- NUT DIEU HUONG BANNER - CONTROL KEYS -->
+        <button
+          class="carousel-control-prev control-btn"
+          type="button"
+          data-bs-target="#leader_banner"
+          data-bs-slide="prev"
+        >
+          <img src="images/left-arrow.svg" alt="left-arrow" />
+        </button>
+        <button
+          class="carousel-control-next control-btn"
+          type="button"
+          data-bs-target="#leader_banner"
+          data-bs-slide="next"
+        >
+          <img src="images/right-arrow.svg" alt="right-arrow" />
+        </button>
+      </div>
+    </div>
+    <!-- //PHAN FORM SUBCRIBE -->
+    <div id="subcription-box">
+      <div class="row d-flex justify-content-center align-items-center rows">
+        <div class="col-md-6 hidden subcri-box">
+          <div
+            class="card"
+            style="background-image: url(images/subcribe-background.jpg)"
+          >
+            <div class="text-center text-script">
+              <span class="d-block mt-3"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, saepe.
+              </span>
+              <div class="mx-5">
+                <form class="input-group mb-3 mt-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter email"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-success border-rad"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="over-layout hidden"></div>
+    <!-- PHAN THONG TIN CA NHAN - ABOUT -->
+
+    <section id="about">
+      <div class="d-md-flex text-md-start">
+        <div id="target" class="w-md-50 w-100 py-5 px-5">
+          <h2 class="section-title py-2 mb-3">Career Path Goals</h2>
+          <p>
+            <i class="fa fa-quote-left fa-3x fa-pull-left"></i>Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Perferendis eveniet officiis
+            officia expedita? <strong>Fullstack Developer</strong>, Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptatem, rerum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
+            nam.
+          </p>
+        </div>
+        <div id="personal-info" class="w-md-50 w-100 py-5 px-3">
+          <h2 class="section-title py-2 mb-3">Personal Information</h2>
+          <table class="hidden personal-info-details">
+            <tr>
+              <th>Date of birth :</th>
+              <td>19/05/2000</td>
+            </tr>
+            <tr>
+              <th>Place of birth :</th>
+              <td>Pleikiu, Gia Lai</td>
+            </tr>
+            <tr>
+              <th>Nationality :</th>
+              <td>Viet Nam</td>
+            </tr>
+            <tr>
+              <th>Phone line :</th>
+              <td>(+84) 912398xxx</td>
+            </tr>
+            <tr>
+              <th>Email :</th>
+              <td>sinhvien@funix.edu.vn</td>
+            </tr>
+            <tr>
+              <th>Address :</th>
+              <td>Street 123, Homesick District, Nightmare City</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <!-- Phan icon duoi thong tin ca nhan -->
+                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </td>
+            </tr>
+          </table>
+          <button
+            type="button"
+            class="btn viewmore btn-view mt-2"
+            onclick="viewPersonalInfo();"
+          >
+            View more...
+          </button>
+          <div id="input-email-box">
+            <div
+              class="row d-flex justify-content-center align-items-center rows"
+            >
+              <div class="col-md emai-input-box hidden">
+                <div
+                  class="card"
+                  style="background-image: url(images/email-input.jpg)"
+                >
+                  <div class="text-center text-script">
+                    <span class="d-block mt-3" id="email-input-message"
+                      >Please enter your email here...</span
+                    >
+                    <div class="mx-5">
+                      <form class="input-group mb-3 mt-4">
+                        <input
+                          type="email"
+                          name="email"
+                          class="form-control"
+                          placeholder="Enter email"
+                          aria-label="Recipient's username"
+                          aria-describedby="button-addon3"
+                          id="input-email-view-info"
+                          required
+                        />
+                        <button
+                          class="btn btn-success border-rad"
+                          type="button"
+                          onclick="submitEmail()"
+                          id="button-addon3"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-email"
+                    onclick="emailInputClose();"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="over-layout hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHAN MASONRY - KINH NGHIEM - HOC VAN KY NANG--- -->
+    <!-- phan format mansory -->
+    <section
+      class="pt-5 px-5 bg-light"
+      id="job-info"
+      style="background-image: url(images/back_ground_1.jpg)"
+    >
+      <div class="row">
+        <!-- data-masonry='{"percentPosition": true }' -->
+        <!-- Kinh  nghiem -->
+        <div
+          class="job-detail experience col-sm-12 col-md-6 col-lg-4 mb-4 pt-5"
+          id="experience"
+        >
+          <div class="card p-3">
+            <div class="d-flex text-center job-detail-title py-2">
+              <h2 class="w-75">Work experience</h2>
+              <!-- <div class="job-icon w-25">
+                <i class="fas fa-laptop-code"></i>
+              </div> -->
+            </div>
+            <button type="button" class="btn btn-warning bttn-down">
+              <i class="fa-solid fa-caret-down"></i>View more
+            </button>
+            <div class="job-detail-content hidden">
+              <ul>
+                <li>
+                  <p>
+                    <i class="fas fa-crow"></i>Full Stack Developer - Công ty Y
+                  </p>
+                  <p>05/2022 - <em>now</em></p>
+                  <p>
+                    - Lorem ipsum dolor sit , adipisicing elit. Natus, sapiente!
+                  </p>
+                  <p>
+                    - Lorem ipsum dolor sit adipisicing elit. At iure laudantium
+                    amet.
+                  </p>
+                  <p>- Lorem ipsum dolor sit amet r adipisicing elit.</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fab fa-pagelines"></i>Web Designer - Công ty X
+                  </p>
+                  <p>06/2021 - 04/2022</p>
+                  <p>
+                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p>- Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ----Phan hoc van ----->
+        <div
+          class="job-detail education col-sm-12 col-md-6 col-lg-4 mb-4 pt-5"
+          id="education"
+        >
+          <div class="card p-3">
+            <div class="d-flex text-center job-detail-title py-2">
+              <h2 class="w-75">Education</h2>
+              <!-- <div class="job-icon w-25">
+                <i class="fas fa-book"></i>
+              </div> -->
+            </div>
+            <button type="button" class="btn btn-warning bttn-down">
+              <i class="fa-solid fa-caret-down"></i>View more
+            </button>
+            <div class="job-detail-content hidden">
+              <ul>
+                <li>
+                  <p><i class="fas fa-feather-alt"></i>FUNiX</p>
+
+                  <p>06/2021 - 05/2022</p>
+                  <p>- Lorem ipsum dolor sit amet. Fullstack.</p>
+                  <p>- GPA: <em> 9 / 10</em></p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-paper-plane"></i>
+                    Cử nhân - ĐH FPT
+                  </p>
+                  <p>08/2016 - 07/2019</p>
+                  <p>- Chuyên ngành: Lorem, ipsum dolor.</p>
+                  <p>- GPA: 3.2 / 4</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ---phan hoat dong ------>
+        <!-- hoat dong -->
+        <div
+          class="job-detail activities col-sm-12 col-md-6 col-lg-4 mb-4 pt-5"
+        >
+          <div class="card p-3">
+            <div class="d-flex text-center job-detail-title py-2">
+              <h2 class="w-75">Social Activities</h2>
+              <!-- <div class="job-icon w-25">
+                <i class="fas fa-share-alt"></i>
+              </div> -->
+            </div>
+            <button type="button" class="btn btn-warning bttn-down">
+              <i class="fa-solid fa-caret-down"></i>View more
+            </button>
+            <div class="job-detail-content hidden">
+              <ul>
+                <li>
+                  <p>
+                    <i class="fas fa-fish"></i>Smartly hulk pirate avast 2019
+                  </p>
+                  <p>03/2019 - 05/2019</p>
+                  <p>- Giải 3 bảng A</p>
+                  <p>
+                    - Đề tài: Lorem ipsum dolor sit amet consectetur adipisicing
+                    Lorem ipsum dolor sit amet consectetur a elit.
+                  </p>
+                </li>
+                <li>
+                  <p><i class="fas fa-seedling"></i>Bilge water cable dead</p>
+                  <p>08/2016 - 08/2017</p>
+                  <p>
+                    - Laudantium exercitationem quam facere consectetur
+                    incidunt, obcaecati optio porro magni impedit recusandae
+                    rerum et.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- --- so thich-- -->
+        <div
+          class="job-detail hobbies col-sm-12 col-md-6 col-lg-4 mb-4 pt-5"
+          id="hobbies"
+        >
+          <div class="card p-3">
+            <div class="d-flex text-center job-detail-title py-2">
+              <h2 class="w-75">Hobbies</h2>
+              <!-- <div class="job-icon w-25">
+                <i class="fas fa-music"></i>
+              </div> -->
+            </div>
+            <button type="button" class="btn btn-warning bttn-down">
+              <i class="fa-solid fa-caret-down"></i>View more
+            </button>
+            <div class="job-detail-content detail-hobbies row hidden">
+              <table class="col-md col-table">
+                <tr>
+                  <th><i class="fas fa-futbol"></i></th>
+                  <td>Football</td>
+                </tr>
+                <tr>
+                  <th><i class="fas fa-swimmer"> </i></th>
+                  <td>Swimming</td>
+                </tr>
+                <tr>
+                  <th>
+                    <em><i class="fas fa-guitar"> </i></em>
+                  </th>
+                  <td>Music</td>
+                </tr>
+              </table>
+              <table class="col-md col-table">
+                <tr>
+                  <th><i class="fas fa-book-reader"> </i></th>
+                  <td>Reading</td>
+                </tr>
+                <tr>
+                  <th><i class="fas fa-pepper-hot"></i></th>
+                  <td>Cooking</td>
+                </tr>
+                <tr>
+                  <th>
+                    <i class="fas fa-umbrella-beach"></i>
+                  </th>
+                  <td>Travel</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- Phan ngon ngu -->
+        <div class="job-detail languages col-sm-12 col-md-6 col-lg-4 mb-4 pt-5">
+          <div class="card p-3">
+            <div class="d-flex text-center job-detail-title py-2">
+              <h2 class="w-75">Languages</h2>
+              <!-- <div class="job-icon w-25">
+                <i class="fas fa-language"></i>
+              </div> -->
+            </div>
+            <button type="button" class="btn btn-warning bttn-down">
+              <i class="fa-solid fa-caret-down"></i>View more
+            </button>
+            <div class="job-detail-content detail-languages hidden">
+              <table>
+                <tr>
+                  <th>English:</th>
+                  <td>
+                    IELTS 7.0 <br /><span class="blue-color"></span
+                    ><span class="blue-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Japanese:</th>
+                  <td>
+                    JLPT N4 <br /><span class="blue-color"></span
+                    ><span class="grey-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Thai:</th>
+                  <td>
+                    Speak & reading <br /><span class="blue-color"></span
+                    ><span class="blue-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Chinese:</th>
+                  <td>
+                    Simple conversation <br /><span class="blue-color"></span
+                    ><span class="grey-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!----- Phan ky nang--- -->
+        <div class="job-detail skill col-sm-12 col-md-6 col-lg-4 mb-4 pt-5">
+          <div class="card p-3">
+            <div class="d-flex text-center job-detail-title py-2">
+              <h2 class="w-75">Skills</h2>
+              <!-- <div class="job-icon w-25">
+                <i class="fas fa-tools"></i>
+              </div> -->
+            </div>
+            <button type="button" class="btn btn-warning bttn-down">
+              <i class="fa-solid fa-caret-down"></i>View more
+            </button>
+            <div class="job-detail-content detail-skills hidden">
+              <table>
+                <tr>
+                  <th>HTML/CSS :</th>
+                  <td>
+                    Fundamental <br /><span class="blue-color"></span
+                    ><span class="grey-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Javascript :</th>
+                  <td>
+                    Intermediate <br /><span class="blue-color"></span
+                    ><span class="blue-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>NodeJS :</th>
+                  <td>
+                    Intermediate <br /><span class="blue-color"></span
+                    ><span class="blue-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Bootstrap 5 :</th>
+                  <td>
+                    Fundamental <br /><span class="blue-color"></span
+                    ><span class="grey-color"></span
+                    ><span class="grey-color"></span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHAN CHUNG CHI -->
+    <section class="py-5 px-5" id="certificates">
+      <div class="section-title"><h2>Certificates - Awards</h2></div>
+      <div class="certificates-menu row">
+        <div class="certificate cert-1 d-lg-flex col-md-6">
+          <img src="images/cert-1.png" alt="certificate 1" class="cert-img" />
+          <div class="cert-detail">
+            <h3>Chứng chỉ lập trình Web-Funnix</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>GPA: 8.6</li>
+            </ul>
+          </div>
+        </div>
+        <div class="certificate cert-2 d-lg-flex col-md-6">
+          <img src="images/cert-2.png" alt="certificate 2" class="cert-img" />
+          <div class="cert-detail">
+            <h3>Jib scurvy bilged on her anchor</h3>
+            <ul>
+              <li>Praesentium veniam. Excepturi, repellendus.</li>
+              <li>GPA: 8.9</li>
+            </ul>
+          </div>
+        </div>
+        <div class="certificate cert-3 d-lg-flex col-md-6">
+          <img src="images/cert-3.png" alt="certificate 3" class="cert-img" />
+          <div class="cert-detail">
+            <h3>Neque porro est, qui dolorem</h3>
+            <ul>
+              <li>Sint odio possimus, ad magni asperiores.</li>
+              <li>GPA: 8.0</li>
+            </ul>
+          </div>
+        </div>
+        <div class="certificate meme col-md-6 col-12">
+          <img id="meme_1" src="images/meme.png" alt="meme_1" class="meme" />
+        </div>
+      </div>
+    </section>
+    <!-- PHAN DU AN -->
+    <section id="project" class="py-5 px-5">
+      <div class="section-title"><h2>Implemented Projects</h2></div>
+      <div class="projects-menu row">
+        <div class="project-details col-md card">
+          <img
+            src="images/project_1.png"
+            alt="Project CV ca nhan"
+            class="img-project"
+          />
+          <h3>De Finibus Bonorum</h3>
+          <div class="project-year">
+            <span class="time-curent">2022</span>
+            <div class="proj-des">
+              <span><i class="far fa-building"></i>McClintock</span>
+              <span><i class="fas fa-laptop-code"></i>Zijn theor</span>
+            </div>
+          </div>
+          <table class="project-table">
+            <tr>
+              <th>About :</th>
+              <td>
+                Leveniet animi reiciendis rerum laboriosam fuga quas praesentium
+                non beatae reprehenderit doloremque et!
+              </td>
+            </tr>
+            <tr>
+              <th>Role :</th>
+              <td>
+                Ontwerpers hebben vaak een haat-liefde relatie met “lorem
+                Ipsum-teksten”.
+              </td>
+            </tr>
+            <tr>
+              <th>Tech :</th>
+              <td>HTML, CSS.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="projects.html">More details</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="project-details col-md card">
+          <img
+            src="images/project_2.png"
+            alt="Project Trang web quan ly thu cung"
+            class="img-project"
+          />
+          <h3>Cicero heel veel filosofische</h3>
+          <div class="project-year">
+            <span class="time-curent">2020</span>
+            <div class="proj-des">
+              <span><i class="far fa-building"></i>Dan werd je</span>
+              <span><i class="fas fa-laptop-code"></i>Dat zou all</span>
+            </div>
+          </div>
+          <table class="project-table">
+            <tr>
+              <th>About :</th>
+              <td>
+                Andere ontwerpers vinden het juist weer ideaal om zogenaamde
+                dummy teksten of fake-teksten op te nemen in hun tijdelijke
+                ontwerpen.
+              </td>
+            </tr>
+            <tr>
+              <th>Role :</th>
+              <td>Het kan namelijk handig zijn om te bekijken.</td>
+            </tr>
+            <tr>
+              <th>Tech :</th>
+              <td>HTML, CSS.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="projects.html">More details</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="project-details col-md card">
+          <img
+            src="images/project_3.png"
+            alt="Project Trang web xem tin tuc"
+            class="img-project"
+          />
+          <h3>Het werd écht in de jaren ’60,</h3>
+          <div class="project-year">
+            <span class="time-curent">2019</span>
+            <div class="proj-des">
+              <span><i class="far fa-building"></i>Lorum Ipsum</span>
+              <span><i class="fas fa-laptop-code"></i>Het geuik</span>
+            </div>
+          </div>
+          <table class="project-table">
+            <tr>
+              <th>About :</th>
+              <td>
+                Cicero schreef heel veel filosofische werken, en één van deze
+                werken is de “De Finibus Bonorum et Malorum”.
+              </td>
+            </tr>
+            <tr>
+              <th>Role :</th>
+              <td>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet,.
+              </td>
+            </tr>
+            <tr>
+              <th>Tech :</th>
+              <td>HTML, CSS.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="projects.html">More details</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="bg-grey">
+      <ul class="d-flex text-center justify-content-center">
+        <li>
+          <a href="#">Facebook <i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#">Linkedin <i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#">Github <i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="css/script.js"></script>
+  </body>
+</html>

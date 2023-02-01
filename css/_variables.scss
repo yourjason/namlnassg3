@@ -1,0 +1,66 @@
+// FONT CHU
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("../fonts/NotoSans-Bold.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("../fonts/NotoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Merienda-VariableFont_wght";
+  src: url("../fonts/Merienda-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Monoton-Regular";
+  src: url("../fonts/Monoton-Regular.ttf");
+}
+
+//COLORS
+
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+// scss-docs-end color-variables
+//SHADE OF GREEN
+
+$green-50: #e8f5e9;
+$green-100: #c8e6c9;
+$green-200: #a5d6a7;
+$green-300: #81c784;
+$green-400: #66bb6a;
+$green-500: #4caf50;
+$green-600: #43a047;
+$green-700: #388e3c;
+$green-800: #2e7d32;
+$green-900: #1b5e20;
+
+// SHADE OF YELLOW
+$yellow-50: #fffde7;
+$yellow-100: #fff9c4;
+$yellow-200: #fff59d;
+$yellow-300: #fff176;
+$yellow-400: #ffee58;
+$yellow-500: #ffeb3b;
