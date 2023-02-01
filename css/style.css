@@ -41,7 +41,6 @@ i {
 }
 
 .navbar {
-  position: relative;
   --bs-navbar-color: green;
   --bs-navbar-toggler-focus-width: 2px;
   background-color: #e8f5e9;
@@ -49,6 +48,7 @@ i {
   padding-bottom: 4px;
 }
 .navbar .navbar-brand {
+  position: relative;
   font-family: Monoton-Regular;
   color: #2e7d32;
   font-weight: 500;
@@ -680,4 +680,4 @@ main {
   h1 {
     font-size: calc(1rem + 1.5vw);
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
