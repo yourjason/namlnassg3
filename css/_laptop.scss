@@ -1,0 +1,84 @@
+//FORMAT TU LAPTOP TRO XUONG
+@media (max-width: 1120px) {
+  h3 {
+    font-size: 14px;
+  }
+  .cert-detail ul li {
+    font-size: 12px;
+  }
+
+  //phan du an nam tro thanh 1 box rieng
+  #project {
+    .projects-menu {
+      .project-details {
+        margin: 10px;
+        padding: 10px;
+        .project-year {
+          display: flex;
+          align-items: center;
+          .proj-des {
+            i {
+              font-size: 14px;
+            }
+            font-size: 12px;
+            text-align: left;
+            display: grid;
+          }
+        }
+        .project-table {
+          font-size: 12px;
+          th {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  // them space cho phan muc tieu nghe nghiep
+  #target {
+    p {
+      padding: 0 40px 60px 40px;
+    }
+  }
+  // them space cho phan kinh nghiem
+  #job-info {
+    .row {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  // them space cho phan chung chi
+  #certificates {
+    .certificate {
+      padding: 16px 28px;
+      .cert-detail {
+        margin-top: 30px;
+      }
+    }
+    .cert-img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    .cert-detail ul li {
+      font-size: 14px;
+    }
+  }
+  .project-2-col {
+    table {
+      tr {
+        td {
+          .trhead {
+            i {
+              background-color: $green-50;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

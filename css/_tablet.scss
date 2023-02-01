@@ -1,0 +1,64 @@
+//FORMAT TU TABLET TRO XUONG
+@media (max-width: 768px) {
+  //phan thong tin ca nhan
+  #personal-info {
+    margin-left: 0;
+    h2 {
+      position: relative;
+      text-align: center;
+    }
+    table {
+      margin: 0 auto;
+    }
+    .viewmore {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  //phan kinh nghiem
+  #job-info {
+    .row {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  // phan chung chi
+  #certificates {
+    .certificate {
+      padding: 8px 16px;
+    }
+    .cert-img {
+      width: 80%;
+    }
+  }
+  #project {
+    .projects-menu {
+      .project-details {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+
+        .project-year {
+          display: inline;
+          align-items: center;
+          font-weight: bold;
+          .proj-des {
+            i {
+              font-size: 18px;
+            }
+            font-size: 14px;
+            text-align: left;
+            display: inline;
+          }
+        }
+        .project-table {
+          font-size: 14px;
+          th {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
